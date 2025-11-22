@@ -1,12 +1,46 @@
+# -------------------------------------------------------------------
+# Environment Files (CRITICAL: Ignore secrets)
+# -------------------------------------------------------------------
+# Ignores all files containing secrets (e.g., .env, .env.local, .env.production)
 .env
 .env.*
+# DO NOT ignore the template file that shows required variables
 !.env.example
+
+# -------------------------------------------------------------------
+# OS/System Files
+# -------------------------------------------------------------------
+# Mac OS
 .DS_Store
-__pycache__
+
+# -------------------------------------------------------------------
+# IDE & Configuration Folders
+# -------------------------------------------------------------------
+# PyCharm/IntelliJ
 .idea
+# VS Code
+.vscode/
+# Temporary files for Key Management Service (KMS) - assuming this is a local config
 KMS
+
+# -------------------------------------------------------------------
+# Python Virtual Environments
+# -------------------------------------------------------------------
+# Virtual environment folders (common names: .venv, venv)
 .venv
-.vscode
+venv/
+
+# -------------------------------------------------------------------
+# Python Compiled/Cache Files
+# -------------------------------------------------------------------
+# Byte-compiled files
+__pycache__
+*.pyc
+
+# Distribution/packaging files
 *.egg-info
-.pytest_cache
-.ruff_cache
+.eggs/
+
+# Testing and Linting Caches
+.pytest_cache/
+.ruff_cache/
